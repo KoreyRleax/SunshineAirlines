@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office User Menu</title>
+    <link rel="stylesheet" href="./css/airline.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/sunshine.js"></script>
+    <script src="./js/searchFlight.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+            <img class="logoimg" src="./image/logo/logo1.png" alt="">
+        </div>
+        <div class="status">
+            Office User Menu
+        </div>
+    </div>
+    <div class="menulist">
+        <div class="list_sf" style="color: #F79420;">Search Flights</div>
+        <a href="./FlightStatus.html">
+            <div class="list_sf">Flight Status</div>
+        </a>
+        <div class="list_out">Logout</div>
+    </div>
+    <div class="searchlist">
+        <div class="optionone" style="height: 60px;">
+            <P><input class="oneWay wayRadio" name="way" type="radio" checked="checked" value="1" />One Way</P>
+            <P><input class="roundWays wayRadio" name="way" type="radio" value="2" />Round Ways</P>
+        </div>
+        <div class="dropdown">
+            <p>From City:</p>
+            <select class="fromCity">
+                <option value="volvo">Beijing</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <p>To City:</p>
+            <select class="toCity">
+                <option value="volvo">Rome</option>
+            </select>
+        </div>
+        <div class="optiondate">
+            <p>Departure Date：</p>
+            <input class="departureDate" style="width: 120px;" type="date" value="2019-08-29" />
+        </div>
+        <div class="optiondate returnDateCondition" style="display:none">
+            <p>Return Date：</p>
+            <input class="returnDate" style="width: 120px;" type="date" value="2019-08-31" />
+        </div>
+        <div class="dropdown">
+            <p>Cabin Type：</p>
+            <select class="cabinType">
+                <option value="3">First</option>
+                <option value="2">Business</option>
+                <option value="1">Economy</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <p>Flight Type：</p>
+            <select class="flightType">
+                <option value="All">All</option>
+                <option value="Non-stop">Non-stop</option>
+                <option value="1-stop">1-stop</option>
+            </select>
+        </div>
+        <div class="searchbutton">
+            <input type="button" class="searchFlight" id="show" value="Search" />
+        </div>
+    </div>
+    <div class="msgtitle">
+        Departure Flights：
+    </div>
+    <div class="msglist departureFlightList">
+        <div class="innermsg">
+            <div class="innerlist">
+                <p>$105.40</p>
+                <p>Economy</p>
+                <p>Flight 101(95%)</p>
+            </div>
+            <div class="innerlist" style="width: 450px;">
+                <div class="placelist">
+                    <p class="citymsg">Beijing/PEK</p>
+                    <p class="datemsg">2018-06-25 08:05</p>
+                </div>
+                <div class="placelist">
+                    <div class="citymsg">Rome/CIA</div>
+                    <div class="datemsg">2018-06-25 18:05 </div>
+                </div>
+            </div>
+            <div class="innerlist">
+                <p>Non-stop </p>
+                <p>Total time:10h 0m</p>
+                <p style="color: red;">3 available tickets</p>
+            </div>
+        </div>
+        <div class="stopinnermsg">
+            <div class="innerlist" style="height: 120px;">
+                <p>$100.04</p>
+                <p>Economy</p>
+                <p>Flight 102(90%)</p>
+                <p>Flight 104(92%)</p>
+            </div>
+            <div class="linelist" style="height: 204px;">
+                <div class="placelist">
+                    <p class="citymsg">Beijing/PEK</p>
+                    <p class="datemsg">2018-06-25 21:05</p>
+                    <p class="citymsg">Hong Kong/HKG</p>
+                    <p class="datemsg">2018-06-25 23:05</p>
+                </div>
+                <div class="stoplist">
+                    <p>2h30m transfer in Hong Kong/HKG</p>
+                </div>
+                <div class="placelist">
+                    <p class="citymsg">Hong Kong/HKG</p>
+                    <p class="datemsg">2018-06-26 01:35</p>
+                    <p class="citymsg">Rome/CIA</p>
+                    <p class="datemsg">2018-06-26 11:35</p>
+                </div>
+            </div>
+            <div class="innerlist">
+                <p>1-stop </p>
+                <p>Total time:16h 50m</p>
+                <p>18 available tickets</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="msgtitle returnFlightTitle" style="display: none;">
+        Return Flights：
+    </div>
+    <div class="msglist returnFlightList" style="display: none;">
+
+    </div>
+
+</body>
+
+</html>

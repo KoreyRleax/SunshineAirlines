@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+    <link rel="stylesheet" href="./css/airline.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/sunshine.js"></script>
+    <script src="./js/editUser.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img class="logoimg" src="./image/logo/logo1.png" alt="">
+        </div>   
+        <div class="status">
+            Administrator Menu
+        </div>
+    </div>
+    <div class="headline">
+        <div class="headtitle">Add/Edit User</div>
+        <div class="editbutton" style="margin-bottom: 0;">
+            <a href="./UserManagement.html"><input style="width: 60px;" type="button" name="" id="" value="Exit" /></a>
+        </div>
+    </div>
+    <div class="addmenu">
+        <div class="addmsg">
+            <div class="sltphoto">
+                <div class="sltbutton">
+                    <input id="upload-input" type="file" accept="image/gif, image/jpg, image/png" />
+                    <div style="text-align: top">
+                        <img class="photo" id="upload" src="./image/2020-02-25_121944.png" style="width: 120px; height: 160px; vertical-align: middle;" />  
+                        <p class="selttext">select photo</p>                    
+                    </div>
+                </div>   
+            </div>
+            <div class="addline"> 
+                <div class="item">
+                    <p >Email：</p>
+                    <input class="email"  style="width: 180px;" type="text" value=""/>
+                </div>
+                <div class="item">
+                    <p>Role:</p>
+                    <p style="font-size: 14px;"> 
+                        <input class="roleUser" name="Role" type="radio" checked="checked"/>Office User
+                        <input class="roleAdministrator" name="Role" type="radio" />Administrator
+                    </p>
+                </div>
+                <div class="item">
+                    <p>Gender：</p>
+                    <p style="font-size: 14px;"> 
+                        <input class="genderMale" name="Gender" type="radio" checked="checked"/>Male
+                        <input class="genderFemale" name="Gender" type="radio" />Female
+                    </p>
+                </div>
+            </div>
+            <div class="addline"> 
+                <div class="item">
+                    <p >First Name：</p>
+                    <input class="firstName" style="width: 180px;" type="text" value=""/>
+                </div>
+                <div class="item">
+                    <p >Last Name：</p>
+                    <input class="lastName" style="width: 180px;" type="text" value=""/>
+                </div>
+                <div class="item">
+                    <p >Birth Date：</p>
+                    <input class="dateOfBirth" style="width: 120px;" type="date" value="2015-08-25"/>
+                </div>
+            </div>
+            <div class="addline"> 
+                <div class="item">
+                    <p >Phone：</p>
+                    <input class="phone" style="width: 180px;" type="text" value=""/>
+                </div>
+                <div class="itemads">
+                    <p >Address：</p>
+                    <input class="address" style="width: 320px;" type="text" value=""/>
+                </div>
+            </div>
+        </div>
+        <div class="addsubmit">
+            <div class="editbutton" style="margin: 10px;">
+                <input class="submit" style="width: 60px;" type="button" name="" id="" value="Submit" />
+            </div>
+            <div  class="editbutton" style="margin: 10px;">
+                <input style="width: 60px;" type="button" name="" id="" value="Cancel" />
+            </div>
+        </div>    
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="./css/airline.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/sunshine.js"></script>
+    <script src="./js/userManagement.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img class="logoimg" src="./image/logo/logo1.png" alt="">
+        </div>   
+        <div class="status">
+            Administrator Menu
+        </div>
+    </div>
+    <div class="menulist">
+        <a href="./AdministratorMenu.html"><div class="list_sf" style="width: 300px;">Flight Schedule Management</div></a>
+        <div class="list_sf" style="color: #F79420;">User Management</div>
+        <div class="list_out">Logout</div>
+    </div>   
+    <div class="searchlist">
+        <div class="dropdown"  style="margin-left:50px; width:120px;">    
+            <p >Role:</p>
+            <select class="RoleId" style="width:80px; ">
+                <option  value="0">All</option>
+                <option  value="1">User</option>
+                <option  value="2">Administrator</option>
+            </select>     
+        </div>
+        <div class="dropdown" style="width:120px; ">    
+            <p>Name：</p>
+            <input class="userName" style="width:100px; " type="text"> 
+        </div>
+        <div class="searchbutton" style="width:120px; ">
+            <input style="width:80px; " type="button" name="" id="show" value="Search" />
+        </div>
+        <div class="searchbutton addUser" style="width:120px; ">
+            <input type="button" name="" id="goAddUser" value="Add a new user" />
+        </div>
+    </div>
+    <table class="formclass">
+        <thead class="thead">
+            <tr>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Date Of Birth</th>
+                <th>Phone</th>
+                <th>Role</th>
+                <th>Operate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tdcolor">
+                <td>behappy@vip.sina.com</td>
+                <td>Mag Lydia</td>
+                <td>Male</td>
+                <td>1988-06-06</td>
+                <td>13087666556</td>
+                <td>Office User</td>
+                <td><input class='editUser' style='width: 80px;  font-size: 16px;' type='button' value='Edit'/></td>
+            </tr>
+            <tr class="tdcolor1">
+                <td>behappy@vip.sina.com</td>
+                <td>Mag Lydia</td>
+                <td>Male</td>
+                <td>1988-06-06</td>
+                <td>13087666556</td>
+                <td>Office User</td>
+                <td><input class='editUser' style='width: 80px;  font-size: 16px;' type='button' value='Edit'/></td>
+            </tr>
+            <tr class="tdcolor">
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr class="tdcolor1">
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            
+        </tbody>                  
+    </table>
+    <div class="pagemsg"> 
+        <div class="pageicon">
+            <div class="prev step-backward">
+                <i class="fa fa-step-backward" aria-hidden="true"></i>
+            </div>
+            <div class="prev chevron-left">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+            <div class="NUM">
+                <select class="pages" style="width:80px; ">
+                    <option  value="volvo">1</option>
+                </select>    
+            </div>
+            <div class="prev chevron-right">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+            <div class="prev step-forward">
+                <i class="fa fa-step-forward" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="totalpage">
+            <span>
+                Total Pages：
+            </span>
+            <span class="pages">
+                10
+            </span>
+            <span>
+                Total Records:
+            </span>
+            <span class="totals">
+                200
+            </span>
+        </div>
+    </div>
+    
+</body>
+</html>
