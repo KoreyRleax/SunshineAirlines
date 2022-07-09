@@ -1,2 +1,2 @@
-# sunShineAirlines
+#SunshineAirlines
 这是宇哥大二的时候学航空管理系统前端代码，里面的代码都是经过宇哥精心优化的
